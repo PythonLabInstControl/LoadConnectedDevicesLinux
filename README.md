@@ -12,4 +12,4 @@ Before you can use our source code change the value of ```PYUSB_PATH```(line num
 
 [test.py](https://github.com/PythonLabInstControl/LoadConnectedDevicesLinux/blob/master/test.py) contains an example of how the load_all_devices.linux_devices-class can be used
 
-If you want to know how to work with Github [click here](https://github.com/PythonLabInstControl/SR830_LockInAmplifier#how-to-work-with-github)
+If you want to know how to work with Github [click here](https://github.com/PythonLabInstControl/SR830_LockInAmplifier#how-to-work-with-github).
