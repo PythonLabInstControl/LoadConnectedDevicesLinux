@@ -17,6 +17,8 @@ import imp
 import sys
 
 DEBUG = False
+PYUSB_PATH = './pyusb/python-usbtmc/usbtmc/usbtmc.py'#change this to the path your pyusb-directory is located
+#you can download pyusb from https://github.com/walac/pyusb
 
 class linux_devices(object):
     USBTMC_DEVICE_LIST = []
@@ -52,8 +54,7 @@ class linux_devices(object):
         """
         try:
             modfile = 'usbtmc'
-            modname = './pyusb/python-usbtmc/usbtmc/usbtmc.py'#change this to the path your pyusb-directory is located
-            #you can download pyusb from https://github.com/walac/pyusb
+            modname = PYUSB_PATH
             usbtmc_package = imp.load_source (modfile, modname)
             usbtmc_available = True
         except ImportError:
